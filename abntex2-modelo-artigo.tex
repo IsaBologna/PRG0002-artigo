@@ -94,12 +94,12 @@
 
 % --- Informações de dados para CAPA e FOLHA DE ROSTO ---
 \titulo{Artigo científico}
-\tituloestrangeiro{article: optional foreign title}
+% \tituloestrangeiro{article: optional foreign title}
 
 \autor{Isabella Bologna Salomão }
 
 \local{Brasil}
-\data{2021}
+\data{Junho 2021}
 % ---
 
 % ---
@@ -171,6 +171,8 @@
 % ELEMENTOS PRÉ-TEXTUAIS
 % ----------------------------------------------------------
 
+% Diferentes estilos de cabeçalhos e rodapés podem ser criados usando os recursos padrões do \textsf{memoir}.
+
 %---
 %
 % Se desejar escrever o artigo em duas colunas, descomente a linha abaixo
@@ -178,6 +180,16 @@
 % \twocolumn[    		% INICIO DE ARTIGO EM DUAS COLUNAS
 %
 %---
+
+% A norma ABNT NBR 6022:2018 não estabelece uma margem específica a ser utilizada
+% no artigo científico. Dessa maneira, caso deseje alterar as margens, utilize os
+% comandos abaixo:
+
+% \begin{verbatim}
+%    \setlrmarginsandblock{3cm}{3cm}{*}
+%    \setulmarginsandblock{3cm}{3cm}{*}
+%    \checkandfixthelayout
+% \end{verbatim}
 
 % página de titulo principal (obrigatório)
 \maketitle
@@ -189,18 +201,18 @@
 
 % resumo em português
 \begin{resumoumacoluna}
- Conforme a ABNT NBR 6022:2018, o resumo no idioma do documento é elemento obrigatório. 
- Constituído de uma sequência de frases concisas e objetivas e não de uma 
- simples enumeração de tópicos, não ultrapassando 250 palavras, seguido, logo 
- abaixo, das palavras representativas do conteúdo do trabalho, isto é, 
- palavras-chave e/ou descritores, conforme a NBR 6028. (\ldots) As 
- palavras-chave devem figurar logo abaixo do resumo, antecedidas da expressão 
- Palavras-chave:, separadas entre si por ponto e finalizadas também por ponto.
- 
+
+
+Primeiro resumo - escrito antes do texto como resumo das ideias que planejo serem descritas a seguir. 
+
+O mercado de eletrônicos, a fim de manter o consumo de dispositivos, tem apostado em novos designs e menor durabilidade dos dispositivos, além de uma produção em larga escala que inviabiliza a manutenção e promove a substituição contínua dos dispositivos. 
+Comprando novos eletrônicos, o que acontece com os antigos que se tornaram obsoletos ou que pararam de funcionar? Como é feito o descarte? E qual o impacto desse crescente volume de lixo no planeta?
+
+
  \vspace{\onelineskip}
  
  \noindent
- \textbf{Palavras-chave}: latex. abntex. editoração de texto.
+ \textbf{Palavras-chave}: 
 \end{resumoumacoluna}
 
 
@@ -208,7 +220,7 @@
 \renewcommand{\resumoname}{Abstract}
 \begin{resumoumacoluna}
  \begin{otherlanguage*}{english}
-   According to ABNT NBR 6022:2018, an abstract in foreign language is optional.
+   
 
    \vspace{\onelineskip}
  
@@ -223,8 +235,7 @@
 \begin{center}\smaller
 \textbf{Data de submissão e aprovação}: elemento obrigatório. Indicar dia, mês e ano
 
-\textbf{Identificação e disponibilidade}: elemento opcional. Pode ser indicado 
-o endereço eletrônico, DOI, suportes e outras informações relativas ao acesso.
+\textbf{Identificação e disponibilidade}: elemento opcional. Pode ser indicado o endereço eletrônico, DOI, suportes e outras informações relativas ao acesso.
 \end{center}
 
 % ----------------------------------------------------------
@@ -237,174 +248,106 @@ o endereço eletrônico, DOI, suportes e outras informações relativas ao acess
 % ----------------------------------------------------------
 \section{Introdução}
 
-Este documento e seu código-fonte são exemplos de referência de uso da classe
-\textsf{abntex2} e do pacote \textsf{abntex2cite}. O documento exemplifica a
-elaboração de publicação periódica científica impressa produzida conforme a ABNT
-NBR 6022:2018 \emph{Informação e documentação - Artigo em publicação periódica
-científica - Apresentação}.
-
-A expressão ``Modelo canônico'' é utilizada para indicar que \abnTeX\ não é
-modelo específico de nenhuma universidade ou instituição, mas que implementa tão
-somente os requisitos das normas da ABNT. Uma lista completa das normas
-observadas pelo \abnTeX\ é apresentada em \citeonline{abntex2classe}.
-
-Sinta-se convidado a participar do projeto \abnTeX! Acesse o site do projeto em
-\url{http://www.abntex.net.br/}. Também fique livre para conhecer,
-estudar, alterar e redistribuir o trabalho do \abnTeX, desde que os arquivos
-modificados tenham seus nomes alterados e que os créditos sejam dados aos
-autores originais, nos termos da ``The \LaTeX\ Project Public
-License''\footnote{\url{http://www.latex-project.org/lppl.txt}}.
-
-Encorajamos que sejam realizadas customizações específicas deste documento.
-Porém, recomendamos que ao invés de se alterar diretamente os arquivos do
-\abnTeX, distribua-se arquivos com as respectivas customizações. Isso permite
-que futuras versões do \abnTeX~não se tornem automaticamente incompatíveis com
-as customizações promovidas. Consulte \citeonline{abntex2-wiki-como-customizar}
-para mais informações.
-
-Este exemplo deve ser utilizado como complemento do manual da classe
-\textsf{abntex2} \cite{abntex2classe}, dos manuais do pacote
-\textsf{abntex2cite} \cite{abntex2cite,abntex2cite-alf} e do manual da classe
-\textsf{memoir} \cite{memoir}. Consulte o \citeonline{abntex2modelo} para obter
-exemplos e informações adicionais de uso de \abnTeX\ e de \LaTeX.
+Os dispositivos eletrônicos já fazem parte do nosso dia a dia, tornando-se essenciais em vários contextos, sejam os nossos smartphone e computadores pessoais, eletrodomésticos ou mesmo nos hospitais e na agricultura.  É difícil de olhar em volta e não encontar ao menos um dispositivo eletrônico. 
 
 % ----------------------------------------------------------
 % Seção de explicações
 % ----------------------------------------------------------
-\section{Exemplos de comandos}
+\section{Algumas reflexões a partir das leituras}
 
-\subsection{Margens}
+\subsection{Pontos chave - Brainstorm}
 
-A norma ABNT NBR 6022:2018 não estabelece uma margem específica a ser utilizada
-no artigo científico. Dessa maneira, caso deseje alterar as margens, utilize os
-comandos abaixo:
+\begin{itemize}
+   \item definição de Lixo eletrônico
+   \item Principais compostos
+   \item impacto ambiental dos compostos
+   \item Reciclagem/descarte
+   \item reuso
+   \item Tipos de Baterias
+   \item Baterias alcalinas
+   \item Baterias de Lítio
+   \item Extração e reciclagem do lítio
+   \item impacto ambiental do extrativismo
+   \item extrativismo (industrial x tradicional)
+   \item impacto econômico no Brasil
+   \item Obsolescência programada
+   \item consumismo
+   \item Desenvolvimento eletrônico no Brasil e no mundo
+   \item volume de lixo, proporção do total
+   \item logística reversa
+   \item catadores
+\end{itemize}
 
-\begin{verbatim}
-   \setlrmarginsandblock{3cm}{3cm}{*}
-   \setulmarginsandblock{3cm}{3cm}{*}
-   \checkandfixthelayout
-\end{verbatim}
+\subsection{Tópicos}
 
-\subsection{Duas colunas}
+Para um artigo mais longo:
 
-É comum que artigos científicos sejam escritos em duas colunas. Para isso,
-adicione a opção \texttt{twocolumn} à classe do documento, como no exemplo:
+\begin{itemize}
+	\item O que é Lixo eletrônico
+	\subitem definição 
+	\subitem principal componentes
+	\subitem elementos químicos presentes
+	\subitem volume do lixo
+	\item A geração de lixo eletrônico
+	\subitem consumo capitalista
+	\subitem obsolescência programada
+	\subitem tempo de vida médio dos dispositivos eletrônicos
+	\item Impacto Ambiental
+	\subitem extrativismo industrial
+	\subitem impacto dos químicos na natureza
+	\item A questão econômica
+	\item Descarte e alternativas
+	\subitem CEDIR USP
+	\subitem triagem e reuso
+	\subitem reciclagem
+	\subitem logística reversa
+\end{itemize}
 
-\begin{verbatim}
-   \documentclass[article,11pt,oneside,a4paper,twocolumn]{abntex2}
-\end{verbatim}
+Artigo de divulgação científica, mais curto: 
+\begin{itemize}
+	\item O que é Lixo eletrônico
+	\subitem definição 
+	\subitem principal componentes
+	\subitem elementos químicos presentes
+	\subitem volume do lixo
+	\item Impacto Ambiental
+	\subitem impacto dos químicos na natureza
+	\item Descarte e alternativas
+	\subitem CEDIR USP
+	\subitem triagem e reuso
+	\subitem reciclagem
+	\subitem logística reversa
+\end{itemize}
 
-É possível indicar pontos do texto que se deseja manter em apenas uma coluna,
-geralmente o título e os resumos. Os resumos em única coluna em documentos com
-a opção \texttt{twocolumn} devem ser escritos no ambiente
-\texttt{resumoumacoluna}:
 
-\begin{verbatim}
-   \twocolumn[              % INICIO DE ARTIGO EM DUAS COLUNAS
+\subsection{Vídeos e suas referências}
 
-     \maketitle             % pagina de titulo
+\begin{itemize}
+   \item Capitalismo: um sistema de lixo | 081
+   \subitem \url{https://www.youtube.com/watch?v=dxbD0pUzjP0}
+   \subitem \url{https://teseonze.com.br/referencias/ep081/}
+   \item E o lítio? Interesses bilionários na América Latina | 071
+   \subitem \url{https://www.youtube.com/watch?v=iBUQcAL0t4Y}
+   \subitem \url{https://teseonze.com.br/referencias/ep071/}
+   \item Ecocídio| 040
+   \subitem \url{https://www.youtube.com/watch?v=4niI0mF85ek}
+   \item Você Sabia? | Na USP, você pode descartar seu lixo eletrônico - Canal da USP
+   \subitem \url{https://www.youtube.com/watch?v=vcuyxEMXuRc}
+   \subitem \url{https://jornal.usp.br/universidade/voce-sabia-que-pode-descartar-seu-lixo-eletronico-na-usp/}
+\end{itemize}
 
-     \renewcommand{\resumoname}{Nome do resumo}
-     \begin{resumoumacoluna}
-        Texto do resumo.
-      
-        \vspace{\onelineskip}
- 
-        \noindent
-        \textbf{Palavras-chave}: latex. abntex. editoração de texto.
-     \end{resumoumacoluna}
-   
-   ]                        % FIM DE ARTIGO EM DUAS COLUNAS
-\end{verbatim}
+\subsubsection{Ecocídio}
 
-\subsection{Recuo do ambiente \texttt{citacao}}
+Extrativismo industrial
 
-Na produção de artigos (opção \texttt{article}), pode ser útil alterar o recuo
-do ambiente \texttt{citacao}. Nesse caso, utilize o comando:
 
-\begin{verbatim}
-   \setlength{\ABNTEXcitacaorecuo}{1.8cm}
-\end{verbatim}
+\section{Pesquisa - artigos}
 
-Quando um documento é produzido com a opção \texttt{twocolumn}, a classe
-\textsf{abntex2} automaticamente altera o recuo padrão de 4 cm, definido pela
-ABNT NBR 10520:2002 seção 5.3, para 1.8 cm.
+\subsection{OBSOLESCÊNCIA PROGRAMADA E TEORIA DO DECRESCIMENTO VERSUS DIREITO AO DESENVOLVIMENTO E AO CONSUMO (SUSTENTÁVEIS)}
 
-\section{Cabeçalhos e rodapés customizados}
-
-Diferentes estilos de cabeçalhos e rodapés podem ser criados usando os
-recursos padrões do \textsf{memoir}.
-
-Um estilo próprio de cabeçalhos e rodapés pode ser diferente para páginas pares
-e ímpares. Observe que a diferenciação entre páginas pares e ímpares só é
-utilizada se a opção \texttt{twoside} da classe \textsf{abntex2} for utilizado.
-Caso contrário, apenas o cabeçalho padrão da página par (\emph{even}) é usado.
-
-Veja o exemplo abaixo cria um estilo chamado \texttt{meuestilo}. O código deve
-ser inserido no preâmbulo do documento.
-
-\begin{verbatim}
-%%criar um novo estilo de cabeçalhos e rodapés
-\makepagestyle{meuestilo}
-  %%cabeçalhos
-  \makeevenhead{meuestilo} %%pagina par
-     {topo par à esquerda}
-     {centro \thepage}
-     {direita}
-  \makeoddhead{meuestilo} %%pagina ímpar ou com oneside
-     {topo ímpar/oneside à esquerda}
-     {centro\thepage}
-     {direita}
-  \makeheadrule{meuestilo}{\textwidth}{\normalrulethickness} %linha
-  %% rodapé
-  \makeevenfoot{meuestilo}
-     {rodapé par à esquerda} %%pagina par
-     {centro \thepage}
-     {direita} 
-  \makeoddfoot{meuestilo} %%pagina ímpar ou com oneside
-     {rodapé ímpar/onside à esquerda}
-     {centro \thepage}
-     {direita}
-\end{verbatim}
-
-Para usar o estilo criado, use o comando abaixo imediatamente após um dos
-comandos de divisão do documento. Por exemplo:
-
-\begin{verbatim}
-   \begin{document}
-     %%usar o estilo criado na primeira página do artigo:
-     \pretextual
-     \pagestyle{meuestilo}
-     
-     \maketitle
-     ...
-     
-     %%usar o estilo criado nas páginas textuais
-     \textual
-     \pagestyle{meuestilo}
-     
-     \chapter{Novo capítulo}
-     ...
-   \end{document}  
-\end{verbatim}
-   
-Outras informações sobre cabeçalhos e rodapés estão disponíveis na seção 7.3 do
-manual do \textsf{memoir} \cite{memoir}.
-
-\section{Mais exemplos no Modelo Canônico de Trabalhos Acadêmicos}
-
-Este modelo de artigo é limitado em número de exemplos de comandos, pois são
-apresentados exclusivamente comandos diretamente relacionados com a produção de
-artigos.
-
-Para exemplos adicionais de \abnTeX\ e \LaTeX, como inclusão de figuras,
-fórmulas matemáticas, citações, e outros, consulte o documento
-\citeonline{abntex2modelo}.
-
-\section{Consulte o manual da classe \textsf{abntex2}}
-
-Consulte o manual da classe \textsf{abntex2} \cite{abntex2classe} para uma
-referência completa das macros e ambientes disponíveis.
+\subsection{Da geração de renda à inclusão digital: alternativas para o lixo eletrônico}
+Matéria do Jornal da USP
+\cite{alternativas-lixo-eletronico}
 
 % ---
 % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
@@ -417,13 +360,6 @@ referência completa das macros e ambientes disponíveis.
 % ---
 \section{Considerações finais}
 
-\lipsum[1]
-
-\begin{citacao}
-\lipsum[2]
-\end{citacao}
-
-\lipsum[3]
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -452,13 +388,6 @@ referência completa das macros e ambientes disponíveis.
 % Inicia os apêndices
 % ---
 \begin{apendicesenv}
-
-% ----------------------------------------------------------
-\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-ac pretium ante justo a nulla curabitur tristique arcu eu metus}
-% ----------------------------------------------------------
-\lipsum[55-56]
-
 \end{apendicesenv}
 % ---
 
@@ -471,14 +400,6 @@ ac pretium ante justo a nulla curabitur tristique arcu eu metus}
 % ---
 %\anexos
 \begin{anexosenv}
-
-% ---
-\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
-parturient montes nascetur ridiculus mus}
-% ---
-
-\lipsum[31]
-
 \end{anexosenv}
 
 % ----------------------------------------------------------
@@ -486,7 +407,6 @@ parturient montes nascetur ridiculus mus}
 % ----------------------------------------------------------
 
 \section*{Agradecimentos}
-Texto sucinto aprovado pelo periódico em que será publicado. Último 
-elemento pós-textual.
+Texto sucinto aprovado pelo periódico em que será publicado. Último elemento pós-textual.
 
 \end{document}
